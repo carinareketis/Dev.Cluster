@@ -1,4 +1,4 @@
-**[Dev.Cluster](https://github.com/carinareketis/Dev.Cluster/blob/master/banner-dev-cluster.png)**
+[Dev.Cluster](https://github.com/carinareketis/Dev.Cluster/blob/master/banner-dev-cluster.png)
 
 
 ## Dev.Cluster
