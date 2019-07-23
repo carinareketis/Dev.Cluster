@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,6 +35,12 @@
                 <p class="d-lg-none d-xl-none">Home</p>
               </a>
             </li>
+            <!-- <li class="nav-item p-0">
+                <a class="nav-link" href="">
+                  <i class="fas fa-user-circle"></i>
+                  <p class="d-lg-none d-xl-none">Perfil</p>
+                </a>
+              </li> -->
             <li class="nav-item p-0">
               <a class="nav-link" rel="tooltip" title="GitHub" data-placement="bottom" href="https://github.com"
                 target="_blank">
@@ -54,7 +59,7 @@
               <a class="nav-link" href="">Academy Cluster</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="" id="logout">Sair</a>
+              <a id="logout" class="nav-link" href="index.html">Sair</a>
             </li>
           </ul>
         </div>
@@ -66,97 +71,33 @@
     <div class="page-header">
       <div class="container align-items-center">
         <div class="row">
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-6 col-md-6 ml-auto mr-auto">
             <section>
               <blockquote class="blockquote card card-coin card-plain">
-                <form>
+                <section>
                   <div class="form-group">
                     <label for="inputAddress">Olá mundo!</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="O que você está pensando?">
+                    <input id="addPost" type="text" class="form-control" placeholder="O que você está pensando?">
                   </div>
                   <div class="form-group">
                     <div class="form-check">
                       <label class="form-check-label">
                         <input class="form-check-input" type="checkbox" value="">
-                        Privado
+                        Privados
                         <span class="form-check-sign">
                           <span class="check"></span>
                         </span>
                       </label>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Postar</button>
-                </form>
+                  <button id="sendPost" class="btn btn-primary btn-round">Postar</button>
+                </section>
               </blockquote>
             </section>
             <!-- End Create Post -->
-            <article>
-              <blockquote class="blockquote card card-coin card-plain">
-                <div class="form-group ">
-                  <button class="btn btn-fab btn-icon btn-round" data-toggle="modal" data-target="#exampleModalDelete">
-                    <i class="tim-icons icon-trash-simple"></i>
-                  </button>
-                  <button class="btn btn-fab btn-icon btn-round" data-toggle="modal" data-target="#exampleModalEdit">
-                    <i class="tim-icons icon-pencil"></i>
-                  </button>
-                </div>
-                <div class="form-group">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-primary btn-fab btn-icon btn-round">
-                    <i class="tim-icons icon-chat-33"></i>
-                  </button>
-                  <button class="btn btn-primary btn-fab btn-icon btn-round">
-                    <i class="tim-icons icon-heart-2"></i>
-                  </button>
-                  <span id="like">0</span>
-                </div>
-              </blockquote>
-            </article>
+            <article class="blockquote-margin" id="post"></article>
           </div>
-
-          <article class="modal fade" id="exampleModalDelete" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Excluir post</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Deseja realmente apagar este post?</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Sim</button>
-                </div>
-              </div>
-            </div>
-          </article>
-          <!-- End Modal Delete -->
-          <article class="modal fade" id="exampleModalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Editar post</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <input type="text" class="form-control" style="color: black" placeholder="O que você está pensando?">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Alterar</button>
-                </div>
-              </div>
-            </div>
-          </article>
-          <!-- End Modal Edit -->
-          <section class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <section class="col-lg-4 col-md-6 ml-auto mr-auto block-margin">
             <div class="card card-coin card-plain">
               <header class="card-header">
                 <img src="../assets/img/mike.jpg" class="img-center img-fluid rounded-circle">
@@ -215,12 +156,56 @@
             </div>
           </section>
           <!-- End Profile -->
+          <article class="modal fade" id="exampleModalDelete" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Excluir post</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Deseja realmente apagar este post?</p>
+                </div>
+                <div class="modal-footer">
+                  <button id="btn-delete" type="button" class="btn btn-primary">Sim</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- End Modal Delete -->
+          <article class="modal fade" id="exampleModalEdit" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Editar post</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <input id="edit-post" type="text" class="form-control" style="color: black" value="">
+                </div>
+                <div class="modal-footer">
+                  <button id="btn-edit" type="button" class="btn btn-primary">Alterar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- End Modal Edit -->
         </div>
       </div>
     </div>
   </main>
 
-  <script src="assets/js/login.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
@@ -232,6 +217,10 @@
   <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <script src="../assets/demo/demo.js"></script>
   <script src="../assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+  <script src="src/js/firebase.js"></script>
+  <script src="src/js/auth.js"></script>
+  <script src="src/js/feed.js"></script>
+  <script src="src/js/funcPost.js"></script>
 </body>
 
 </html>

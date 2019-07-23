@@ -16661,7 +16661,7 @@ textarea.form-control:active {
 }
 
 .profile-page .page-header .container {
-  padding-top: 30vh;
+  padding-top: 10vh;
 }
 
 .profile-page .page-header .path {
@@ -20358,7 +20358,8 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 @media (max-width: 575.98px) {
   .card.card-coin {
-    margin-top: 80px;
+    margin-top: 10px;
+    /* top: 60px; */
   }
 }
 
