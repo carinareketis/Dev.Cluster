@@ -1,4 +1,4 @@
-**[Dev.Cluster](http://demos.creative-tim.com/blk-design-system/index.html)**
+**[Dev.Cluster](https://github.com/carinareketis/Dev.Cluster/blob/master/banner-dev-cluster.png)**
 
 
 ## Dev.Cluster
