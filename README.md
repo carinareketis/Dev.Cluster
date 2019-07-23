@@ -1,10 +1,11 @@
-![link](https://github.com/carinareketis/Dev.Cluster/blob/master/banner-dev-cluster.png)
-
-
 ## Dev.Cluster
 
 Dev.Cluster é uma rede social de plataforma colaborativa que tem por objetivo a integração de desenvolvedores.
 Seu layout simula um ambiente de desenvolvimento e é altamente intuitivo.
+
+## Projeto Final
+
+![link](https://github.com/carinareketis/Dev.Cluster/blob/master/banner-dev-cluster.png)
 
 
 ## Navegação App
@@ -26,5 +27,6 @@ Seu layout simula um ambiente de desenvolvimento e é altamente intuitivo.
 - Bootstrap.
 - HTML.
 - CSS.
+
 
 
