@@ -77,7 +77,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
+  /* -ms-overflow-style: scrollbar; */
   -webkit-tap-highlight-color: rgba(34, 42, 66, 0);
 }
 
@@ -613,6 +613,7 @@ pre code {
 
 .container {
   width: 100%;
+  padding-top: 5px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -16661,7 +16662,7 @@ textarea.form-control:active {
 }
 
 .profile-page .page-header .container {
-  padding-top: 10vh;
+  padding-top: 30vh;
 }
 
 .profile-page .page-header .path {
@@ -20215,7 +20216,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   border: 0;
   position: relative;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -20359,7 +20360,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 @media (max-width: 575.98px) {
   .card.card-coin {
     margin-top: 10px;
-    /* top: 60px; */
+  }
+
+  .profile-page .page-header .container {
+    padding-top: 10vh;
   }
 }
 
@@ -20683,6 +20687,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .card.card-register {
     margin-top: 50px;
   }
+  .block-margin {
+    margin-top: 100px;
+  }
 }
 
 .card-stats {
@@ -20806,3 +20813,8 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   width: 100px;
   height: 100px;
 }
+
+/* .blockquote-margin {
+  padding-top: 10px;
+} */
+
