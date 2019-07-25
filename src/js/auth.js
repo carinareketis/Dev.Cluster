@@ -48,38 +48,11 @@ const login = (email, password) => {
 	auth.signInWithEmailAndPassword(email, password).then(cred => {
 		console.log(cred);
 		window.location = "/feed.html?id=" + cred.user.uid;
+		
 	}).catch((error) => {
 		alert(error);
 	});
 };
-
-
-$('#authGoogleButton').click(function (event) {
-	event.preventDefault();
-	const provider = new firebase.auth.GoogleAuthProvider();
-	signIn(provider);
-});
-
-const authFacebookButton = $("#authFacebookButton")
-
-$('#authFacebookButton').click(function (event) {
-	event.preventDefault();
-	const provider = new firebase.auth.FacebookAuthProvider();
-	signIn(provider);
-});
-
-function signIn(provider) {
-	firebase.auth()
-		.signInWithPopup(provider)
-		.then(function (result) {
-			let token = result.credential.accessToken;
-			let user = result.user;
-			window.location = `presentation.html?id=${user.uid}`;
-		}).catch(function (error) {
-			bootbox.alert('Falha na autenticação');
-		});
-
-}
 
 const authGoogle = $('#btn-gmail')
 
