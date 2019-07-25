@@ -1,3 +1,17 @@
+toggleShareButton();
+
+function toggleShareButton() {
+  $('#addPost').on('keyup', function () {
+      const str = $('#addPost').val();
+      if (str.length > 0) {
+          $('#sendPost').removeAttr('disabled');
+      }
+      else {
+          $('#sendPost').prop('disabled', true);
+      }
+  });
+}
+
 function showPost(guide, name) {
   let html = "";
   guide.map((element, index) => {
