@@ -4,7 +4,7 @@ Dev.Cluster é uma rede social de plataforma colaborativa que tem por objetivo a
 
 ## Projeto Final
 
- ![link](https://github.com/carinareketis/Dev.Cluster/blob/master/banner-dev-cluster.png)
+ ![Mockup Dev.Cluster](https://github.com/carinareketis/Dev.Cluster/blob/master/banner-dev-cluster.png)
 
 ## Navegação App
 
