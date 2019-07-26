@@ -24,3 +24,9 @@ Dev.Cluster é uma rede social de plataforma colaborativa que tem por objetivo a
 * JavaScript.
 * jQuery.
 * Bootstrap.
+
+## Implemetações Futuras
+
+* Corrigir atualizações da página.
+* Seguir amigo e compartilhar posts.
+* Editar tela de perfil.
