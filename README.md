@@ -1,6 +1,46 @@
-# [Blk• Design  System](http://demos.creative-tim.com/blk-design-system/index.html) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# Dev.Cluster
 
-![alt text](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/blk-design-system/opt_blk_thumbnail.jpg "Blk• Design System")
+Dev.Cluster é uma rede social de plataforma colaborativa que tem por objetivo a integração de desenvolvedores. Seu layout simula um ambiente de desenvolvimento e é altamente intuitivo.
+
+Navegação App
+O usuário pode criar um registro.
+Se logar com Google (falta implementar).
+Se logar com GitHub (falta implementar).
+Criar um novo post.
+Editar post.
+Excluir post.
+Curtir post.
+Ferramentas de desenvolvimento
+Firebase.
+Hosting.
+JavaScript.
+jQuery.
+Bootstrap.
+HTML.
+CSS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 **[Blk• Design  System](http://demos.creative-tim.com/blk-design-system/index.html)** is a responsive Bootstrap 4 kit provided for free by Creative Tim. It is a beautiful cross-platform UI kit featuring over 70 elements and 3 templates.
